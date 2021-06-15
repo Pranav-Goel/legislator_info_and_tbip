@@ -9,3 +9,5 @@
 **speeches_results/**: Results from TBIP on floor speeches (topics, topic proportions in various texts including the raw text, mean topic proportions for every legislator).
 
 **tweets_results/**: Results from TBIP on Twitter tweets (topics, topic proportions in various texts including the raw text, mean topic proportions for every legislator).
+
+**tbip/**: TBIP code, with commands used to run included, as well as the script for running issue-specific tbip. Includes data files, code to get from raw data to clean data TBIP code can use, and analysis code that creates the result files. 
