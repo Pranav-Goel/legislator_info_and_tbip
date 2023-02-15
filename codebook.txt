@@ -1,0 +1,57 @@
+Bioguide_ID					Bioguide ID of the legislator - primary ID in all files
+Name						Name - from ballotpedia if possible, else from wiki page
+Gender						Currently M/F only (from official legislator info)
+Party						The political party, as per their latest term in congress
+Born						Year of birth
+Number_of_House_Terms				Number of terms in US House till 2021
+Present_Cong115					1/0 indicator whether they were in the House in Congress 115
+Present_Cong116					1/0 indicator whether they were in the House in Congress 116
+House_Election_Candidate_Vote_Share_2016	Legislator's % vote share 2016 House elec. in their district*
+House_Election_Candidate_Vote_Share_2018	Legislator's % vote share 2018 House elec. in their district*
+District					Legislator's district they represent (State-DistrictNum)
+District_Presidential_VoteShare_Dem2016		% of district pop. that voted for Dem candidate in 2016 presidential election
+District_Presidential_VoteShare_GOP2016		% of district pop. that voted for GOP candidate in 2016 presidential election
+District_Density				Rural/Urban status of the district
+District_Percent_Female				% of District designated female as per census data 
+District_Percent_Male				% of District designated male as per census data
+District_Percent_Senior				% of District designated senior as per census data
+District_Median_Age				Median age of the district population
+District_Percent_White				% of District designated white as per census data
+District_Percent_Black				% of District designated black as per census data
+District_Percent_Asian				% of District designated asian as per census data
+District_Percent_Hispanic			% of District designated hispanic as per census data
+District_Percent_AmericanIndian			% of District designated american-indian as per census data
+District_Mean_Income				Mean income of the district population
+District_Mean_Minus_National_Mean_Income	Mean income of district minus national mean income
+District_Median_Income				Median income of the district populatiom
+District_Median_Minus_National_Median_Income	Median income of district minus national median income
+District_Unemployment_Rate			Unemployment rate of district as per census data
+DW-Nominate_1					DW-Nom dimension 1 of legislator (from congress 116 if they were present there, else from congress 115)
+DW-Nominate_2					DW-Nom dimension 2 of legislator (from congress 116 if they were present there, else from congress 115)
+TBIP_Floor_Speeches				TBIP value for House reps derived from US House floor speeches from congresses 115+116*
+TBIP_Tweets					TBIP value for House reps derived from their tweets during congresses 115+116*
+Standardized_Vote_Ideal_Point			Ideal point value derived from House reps voting record during congresses 115+116 using the same model as used for estimating text ideal points, standardized (subtract mean and divide by std)
+Standardized_Speech_Ideal_Point			TBIP_Floor_Speeches: subtract mean, divide by std*
+Standardized_Tweet_Ideal_Point			TBIP_Tweets: subtract mean, divide by std*
+Progressive_Caucus_Cong115			1/0 member of progressive caucus or not in Congress 115
+NewDems_Caucus_Cong115				1/0 member of new democrats caucus or not in Congress 115
+BlueDog_Caucus_Cong115				1/0 member of blue dog democrats caucus or not in Congress 115
+ProblemSolvers_Caucus_Cong115			1/0 member of problem solvers caucus or not in Congress 115
+RSC_Caucus_Cong115				1/0 member of republican study committee caucus or not in Congress 115
+Freedom_Caucus_Cong115				1/0 member of freedom caucus or not in Congress 115
+GOP_Leadership_Cong115				1/0 holding an official GOP leadership position or not in Congress 115
+DEM_Leadership_Cong115				1/0 holding an official Democrat leadership position or not in Congress 115
+CommitteeChair_Cong115				1/0 holding chair of any of the committees or not in Congress 115
+TopCommittee_Cong115				(unsure) 1/0 ranking member of a committee or not in Congress 115 (derived from corresponding column in house members caucus data)
+Progressive_Caucus_Cong116			1/0 member of progressive caucus or not in Congress 116
+NewDems_Caucus_Cong116				1/0 member of new democrats caucus or not in Congress 116
+BlueDog_Caucus_Cong116				1/0 member of blue dog democrats caucus or not in Congress 116
+ProblemSolvers_Caucus_Cong116			1/0 member of problem solvers caucus or not in Congress 116
+RSC_Caucus_Cong116				1/0 member of republican study committee caucus or not in Congress 116
+Freedom_Caucus_Cong116				1/0 member of freedom caucus or not in Congress 116
+GOP_Leadership_Cong116				1/0 holding an official GOP leadership position or not in Congress 116
+DEM_Leadership_Cong116				1/0 holding an official Democrat leadership position or not in Congress 116
+CommitteeChair_Cong116				1/0 holding chair of any of the committees or not in Congress 116
+TopCommittee_Cong116				(unsure) 1/0 ranking member of a committee or not in Congress 116 (derived from corresponding column in house members caucus data)
+
+*Can contain null values, either because the legislator was not present during the congress the column applies to, or because they got filtered out in preprocessing when something was estimated (Twitter TBIP)

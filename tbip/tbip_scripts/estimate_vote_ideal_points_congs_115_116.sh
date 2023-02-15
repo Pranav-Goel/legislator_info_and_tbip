@@ -1,0 +1,1 @@
+cd ../setup && python vote_ideal_points_our_data.py
